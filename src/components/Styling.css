@@ -1,0 +1,10 @@
+.required-field::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}
+
+.button {
+  display: "flex";
+  justify-content: "flex-end";
+}
