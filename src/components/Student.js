@@ -17,7 +17,9 @@ class Student extends Component {
     const { newStudent } = this.props;
     let updatedStudents = newStudent;
 
-    const { data } = await axios.get("http://localhost:3006/allDays");
+    const { data } = await axios.get(
+      "https://arcane-savannah-35268.herokuapp.com/allDays"
+    );
 
     data.forEach((element) => {
       element["isCheck"] = false;
@@ -26,7 +28,7 @@ class Student extends Component {
     updatedStudents["listOfDays"] = data;
 
     await axios
-      .get("http://localhost:3006/allDaysandTimes")
+      .get("https://arcane-savannah-35268.herokuapp.com/allDaysandTimes")
       .then((response) => this.setState({ listOfDaysandTimes: response.data }));
 
     const item = updatedStudents["listOfDays"].map(
