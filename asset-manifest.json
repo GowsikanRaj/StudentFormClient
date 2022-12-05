@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/zoomxacademy/static/css/main.71a75050.css",
+    "main.js": "/zoomxacademy/static/js/main.efcc5f82.js",
+    "index.html": "/zoomxacademy/index.html",
+    "main.71a75050.css.map": "/zoomxacademy/static/css/main.71a75050.css.map",
+    "main.efcc5f82.js.map": "/zoomxacademy/static/js/main.efcc5f82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71a75050.css",
+    "static/js/main.efcc5f82.js"
+  ]
+}
