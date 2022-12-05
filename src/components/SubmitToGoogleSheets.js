@@ -1,24 +1,11 @@
 import axios from "axios";
 import React, { useState } from "react";
 import Form from "./Form";
+import { months } from "../Lists";
 
 function App() {
   const [submission, setSubmission] = useState(false);
 
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
   const d = new Date();
 
   const onFormSubmit = async (student) => {
@@ -34,7 +21,7 @@ function App() {
         .join(", ");
 
       await axios
-        .post("https://arcane-savannah-35268.herokuapp.com/add-student", {
+        .post("http://localhost:3006/add-student", {
           FirstName: student.firstName,
           LastName: student.lastName,
           Address: student.address,

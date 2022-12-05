@@ -6,3 +6,18 @@ export const Grades = [
   { name: "11", id: "11" },
   { name: "12", id: "12" },
 ];
+
+export const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
